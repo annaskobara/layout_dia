@@ -1,0 +1,53 @@
+.about-us {
+  &__content {
+    margin: 0 auto;
+    padding-block: 120px;
+
+    @include on-tablets {
+      padding-block: 148px;
+    }
+
+    @include on-desktops {
+      max-width: 716px;
+    }
+
+    @include on-big-desktops {
+      max-width: 754px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 0;
+
+    font-family: Poppins, sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 150%;
+    color: #253757;
+    text-align: center;
+    letter-spacing: 0;
+
+    @include on-tablets {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__description {
+    margin: 0 auto;
+    padding: 0;
+
+    font-family: OpenSans, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 150%;
+    color: #6c788b;
+    text-align: center;
+    letter-spacing: 0;
+
+    @include on-tablets {
+      font-size: 24px;
+    }
+  }
+}
