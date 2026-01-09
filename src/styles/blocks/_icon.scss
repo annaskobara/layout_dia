@@ -1,0 +1,21 @@
+.icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+
+  &--menu {
+    background-image: url(./src/images/Menu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include on-desktop {
+      display: none;
+    }
+  }
+
+  &--close {
+    background-image: url(../src/images/close.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

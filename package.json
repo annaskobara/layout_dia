@@ -27,6 +27,7 @@
     "@mate-academy/stylelint-config": "latest",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
+    "parcel": "^1.12.3",
     "prettier": "^3.3.2",
     "sass": "^1.93.2",
     "stylelint": "^16.7.0",
@@ -42,5 +43,8 @@
     "tests": {
       "backstop": false
     }
+  },
+  "dependencies": {
+    "swiper": "^12.0.3"
   }
 }

@@ -1,19 +1,46 @@
-@import 'utils';
-@import 'fonts';
-@import 'typography';
-@import './blocks/page';
-@import './blocks/logo';
+@import './utils/mixins';
+@import './utils/variables';
+@import './page';
+
 @import './blocks/header';
+@import './blocks/icon';
 @import './blocks/nav';
-@import './blocks/button';
-@import './blocks/slider';
-@import './blocks/about-us';
-@import './blocks/our-expertise';
-@import './blocks/services';
-@import './blocks/testimonials';
-@import './blocks/cta';
-@import './blocks/contacts-us';
-@import './blocks/feedback';
-@import './blocks/input';
-@import './blocks/contacts';
-@import './blocks/footer';
+@import './blocks/menu';
+
+@import './main/section';
+@import './main/who-we-are';
+@import './main/our-expertise';
+@import './main/process';
+@import './main/testimonials';
+@import './main/vision';
+
+@import './footer/footer';
+@import './footer/message';
+@import './footer/contact-us';
+@import './footer/navigation';
+
+@import './loading/loading';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #2060f6;
+}
+
+body {
+  background-color: #f2f6fa;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  height: 100%;
+}
