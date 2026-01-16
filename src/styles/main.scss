@@ -1,46 +1,35 @@
-@import './utils/mixins';
-@import './utils/variables';
-@import './page';
+/* utils */
+@import 'utils';
 
+/* base */
+@import 'fonts';
+@import 'typography';
+
+/* layout */
+@import './blocks/page';
+@import './blocks/container';
+
+/* components */
+@import './blocks/top-bar';
+@import './blocks/navbar';
 @import './blocks/header';
+@import './blocks/slider';
 @import './blocks/icon';
-@import './blocks/nav';
 @import './blocks/menu';
+@import './blocks/subtitle';
+@import './blocks/button';
 
-@import './main/section';
-@import './main/who-we-are';
-@import './main/our-expertise';
-@import './main/process';
-@import './main/testimonials';
-@import './main/vision';
-
-@import './footer/footer';
-@import './footer/message';
-@import './footer/contact-us';
-@import './footer/navigation';
-
-@import './loading/loading';
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-:root {
-  --primary-color: #2060f6;
-}
-
-body {
-  background-color: #f2f6fa;
-  scroll-behavior: smooth;
-  margin: 0;
-  padding: 0;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  height: 100%;
-}
+/* sections */
+@import './blocks/section-title';
+@import './blocks/about-us';
+@import './blocks/expertise';
+@import './blocks/product';
+@import './blocks/services';
+@import './blocks/service-card';
+@import './blocks/testimonials';
+@import './blocks/review';
+@import './blocks/vision';
+@import './blocks/message';
+@import './blocks/form';
+@import './blocks/contact-info';
+@import './blocks/footer';

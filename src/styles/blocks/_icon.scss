@@ -1,21 +1,39 @@
 .icon {
-  display: block;
-  width: 24px;
+  /* display: block;*/
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 24px;
+  width: 24px;
+
+  /* @media (min-width: 640px) {
+    height: 28px;
+  } */
 
   &--menu {
-    background-image: url(./src/images/Menu.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url(/src/images/icons/icon-menu.png);
+    margin-left: 32px;
+    transition: transform 0.3s ease;
 
-    @include on-desktop {
+    @include onDesktop {
       display: none;
+    }
+
+    &:hover {
+      transform: scale(1.2);
     }
   }
 
   &--close {
-    background-image: url(../src/images/close.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url(/src/images/icons/icon-close.svg);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &--media {
+    display: inline-block;
+    transition: color 0.3s ease;
   }
 }
