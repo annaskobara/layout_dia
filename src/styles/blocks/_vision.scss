@@ -3,7 +3,7 @@
   padding-block: 72px;
 
   @include onTablet {
-    background-image: url('/src/images/Shapes.png');
+    background-image: url('../images/Shapes.png');
     background-position: 50%;
     background-repeat: no-repeat;
     padding-block: 200px;
@@ -42,7 +42,7 @@
     color: #6c788b;
     text-align: center;
     margin: 0 0 56px;
-    font-family: 'OpenSans', sans-serif;
+    font-family: OpenSans, sans-serif;
     font-size: 22px;
     font-weight: 600;
     line-height: 150%;
